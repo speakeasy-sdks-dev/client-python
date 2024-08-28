@@ -3,8 +3,8 @@ id: dc40fa48-2c4d-46ad-ac8b-270749770f34
 management:
   docChecksum: 9128fabc3ae45ecc9ed7fae8991b3d3e
   docVersion: 0.0.2
-  speakeasyVersion: 1.373.1
-  generationVersion: 2.399.0
+  speakeasyVersion: internal
+  generationVersion: 2.404.10
   releaseVersion: 1.0.1
   configChecksum: dc28e30e8f503aee23a53bb77a46c902
   published: true
@@ -12,7 +12,7 @@ features:
   python:
     additionalDependencies: 1.0.0
     constsAndDefaults: 1.0.2
-    core: 5.3.8
+    core: 5.4.1
     defaultEnabledRetries: 0.2.0
     envVarSecurityUsage: 0.3.1
     examples: 3.0.0
