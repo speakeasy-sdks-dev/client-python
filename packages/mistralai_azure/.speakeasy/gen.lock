@@ -3,8 +3,8 @@ id: dc40fa48-2c4d-46ad-ac8b-270749770f34
 management:
   docChecksum: 9128fabc3ae45ecc9ed7fae8991b3d3e
   docVersion: 0.0.2
-  speakeasyVersion: 1.373.1
-  generationVersion: 2.399.0
+  speakeasyVersion: internal
+  generationVersion: 2.410.1
   releaseVersion: 1.0.1
   configChecksum: dc28e30e8f503aee23a53bb77a46c902
   published: true
@@ -12,7 +12,7 @@ features:
   python:
     additionalDependencies: 1.0.0
     constsAndDefaults: 1.0.2
-    core: 5.3.8
+    core: 5.4.3
     defaultEnabledRetries: 0.2.0
     envVarSecurityUsage: 0.3.1
     examples: 3.0.0
@@ -135,3 +135,16 @@ generatedFiles:
   - src/mistralai_azure/_hooks/sdkhooks.py
   - src/mistralai_azure/_hooks/types.py
   - src/mistralai_azure/_hooks/__init__.py
+examples:
+  stream_chat:
+    speakeasy-default-stream-chat:
+      requestBody:
+        application/json: {"model": "azureai", "messages": [{"content": "Who is the best French painter? Answer in one short sentence.", "role": "user"}]}
+  chat_completion_v1_chat_completions_post:
+    speakeasy-default-chat-completion-v1-chat-completions-post:
+      requestBody:
+        application/json: {"model": "azureai", "messages": [{"content": "Who is the best French painter? Answer in one short sentence.", "role": "user"}]}
+      responses:
+        "200":
+          application/json: {"id": "cmpl-e5cc70bb28c444948073e77776eb30ef", "object": "chat.completion", "model": "mistral-small-latest", "usage": {"prompt_tokens": 16, "completion_tokens": 34, "total_tokens": 50}, "created": 1702256327, "choices": []}
+        "422": {}
