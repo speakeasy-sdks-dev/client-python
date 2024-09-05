@@ -54,10 +54,9 @@ if res is not None:
 
 ### Errors
 
-| Error Object    | Status Code     | Content Type    |
+| Exception Class | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| models.SDKError | 4xx-5xx         | */*             |
-
+| types.SDKError  | 4XX, 5XX        | \*/\*           |
 
 ## list
 
@@ -93,10 +92,9 @@ if res is not None:
 
 ### Errors
 
-| Error Object    | Status Code     | Content Type    |
+| Exception Class | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| models.SDKError | 4xx-5xx         | */*             |
-
+| types.SDKError  | 4XX, 5XX        | \*/\*           |
 
 ## retrieve
 
@@ -133,10 +131,9 @@ if res is not None:
 
 ### Errors
 
-| Error Object    | Status Code     | Content Type    |
+| Exception Class | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| models.SDKError | 4xx-5xx         | */*             |
-
+| types.SDKError  | 4XX, 5XX        | \*/\*           |
 
 ## delete
 
@@ -173,6 +170,6 @@ if res is not None:
 
 ### Errors
 
-| Error Object    | Status Code     | Content Type    |
+| Exception Class | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| models.SDKError | 4xx-5xx         | */*             |
+| types.SDKError  | 4XX, 5XX        | \*/\*           |

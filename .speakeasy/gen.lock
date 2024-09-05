@@ -4,9 +4,9 @@ management:
   docChecksum: ad1a7d6946828a089ca3831e257d307d
   docVersion: 0.0.2
   speakeasyVersion: internal
-  generationVersion: 2.410.1
+  generationVersion: 2.410.0
   releaseVersion: 1.0.2
-  configChecksum: ed07f7fc253047a5a4dd2c0f813b8ea4
+  configChecksum: f5eef2bf81dfb608c3bb949598f585c6
   repoURL: https://github.com/mistralai/client-python.git
   installationURL: https://github.com/mistralai/client-python.git
   published: true
@@ -60,6 +60,7 @@ generatedFiles:
   - src/mistralai/py.typed
   - src/mistralai/types/__init__.py
   - src/mistralai/types/basemodel.py
+  - src/mistralai/types/errors.py
   - src/mistralai/utils/__init__.py
   - src/mistralai/utils/annotations.py
   - src/mistralai/utils/enums.py
@@ -75,7 +76,6 @@ generatedFiles:
   - src/mistralai/utils/serializers.py
   - src/mistralai/utils/url.py
   - src/mistralai/utils/values.py
-  - src/mistralai/models/sdkerror.py
   - src/mistralai/models/modellist.py
   - src/mistralai/models/modelcard.py
   - src/mistralai/models/modelcapabilities.py
@@ -367,7 +367,7 @@ examples:
         application/json: {"model": "codestral-latest"}
       responses:
         "200":
-          application/json: {"id": "ad642c1f-c6fe-4072-81bc-dd89dc7fa504", "auto_start": false, "model": "open-mistral-7b", "status": "FAILED_VALIDATION", "job_type": "<value>", "created_at": 230313, "modified_at": 207565, "training_files": []}
+          application/json: {"id": "7ad642c1-fc6f-4e07-a41b-cdd89dc7fa50", "auto_start": true, "model": "open-mistral-nemo", "status": "QUEUED", "job_type": "<value>", "created_at": 519028, "modified_at": 230313, "training_files": []}
   jobs_api_routes_fine_tuning_get_fine_tuning_job:
     speakeasy-default-jobs-api-routes-fine-tuning-get-fine-tuning-job:
       parameters:

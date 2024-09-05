@@ -4,9 +4,9 @@ management:
   docChecksum: 9128fabc3ae45ecc9ed7fae8991b3d3e
   docVersion: 0.0.2
   speakeasyVersion: internal
-  generationVersion: 2.410.1
+  generationVersion: 2.410.0
   releaseVersion: 1.0.1
-  configChecksum: dc28e30e8f503aee23a53bb77a46c902
+  configChecksum: e23f6bf30ce90e8867aee1367571802a
   published: true
 features:
   python:
@@ -48,6 +48,7 @@ generatedFiles:
   - src/mistralai_azure/py.typed
   - src/mistralai_azure/types/__init__.py
   - src/mistralai_azure/types/basemodel.py
+  - src/mistralai_azure/types/errors.py
   - src/mistralai_azure/utils/__init__.py
   - src/mistralai_azure/utils/annotations.py
   - src/mistralai_azure/utils/enums.py
@@ -63,7 +64,6 @@ generatedFiles:
   - src/mistralai_azure/utils/serializers.py
   - src/mistralai_azure/utils/url.py
   - src/mistralai_azure/utils/values.py
-  - src/mistralai_azure/models/sdkerror.py
   - src/mistralai_azure/models/completionevent.py
   - src/mistralai_azure/models/completionchunk.py
   - src/mistralai_azure/models/completionresponsestreamchoice.py

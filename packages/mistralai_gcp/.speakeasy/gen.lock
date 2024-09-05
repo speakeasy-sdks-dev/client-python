@@ -4,9 +4,9 @@ management:
   docChecksum: b276b71cb6764f11b10461fe70962781
   docVersion: 0.0.2
   speakeasyVersion: internal
-  generationVersion: 2.410.1
+  generationVersion: 2.410.0
   releaseVersion: 1.0.1
-  configChecksum: 698bd633a47a664d6f3515c1b9ecdbaa
+  configChecksum: c979ab768771c5c26713ca94e0ea9c08
   published: true
 features:
   python:
@@ -49,6 +49,7 @@ generatedFiles:
   - src/mistralai_gcp/py.typed
   - src/mistralai_gcp/types/__init__.py
   - src/mistralai_gcp/types/basemodel.py
+  - src/mistralai_gcp/types/errors.py
   - src/mistralai_gcp/utils/__init__.py
   - src/mistralai_gcp/utils/annotations.py
   - src/mistralai_gcp/utils/enums.py
@@ -64,7 +65,6 @@ generatedFiles:
   - src/mistralai_gcp/utils/serializers.py
   - src/mistralai_gcp/utils/url.py
   - src/mistralai_gcp/utils/values.py
-  - src/mistralai_gcp/models/sdkerror.py
   - src/mistralai_gcp/models/completionevent.py
   - src/mistralai_gcp/models/completionchunk.py
   - src/mistralai_gcp/models/completionresponsestreamchoice.py

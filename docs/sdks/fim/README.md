@@ -54,11 +54,10 @@ if res is not None:
 
 ### Errors
 
-| Error Object               | Status Code                | Content Type               |
+| Exception Class            | Status Code                | Content Type               |
 | -------------------------- | -------------------------- | -------------------------- |
 | models.HTTPValidationError | 422                        | application/json           |
-| models.SDKError            | 4xx-5xx                    | */*                        |
-
+| types.SDKError             | 4XX, 5XX                   | \*/\*                      |
 
 ## stream
 
@@ -105,7 +104,7 @@ if res is not None:
 
 ### Errors
 
-| Error Object               | Status Code                | Content Type               |
+| Exception Class            | Status Code                | Content Type               |
 | -------------------------- | -------------------------- | -------------------------- |
 | models.HTTPValidationError | 422                        | application/json           |
-| models.SDKError            | 4xx-5xx                    | */*                        |
+| types.SDKError             | 4XX, 5XX                   | \*/\*                      |
