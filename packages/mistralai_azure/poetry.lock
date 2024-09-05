@@ -288,17 +288,6 @@ files = [
 ]
 
 [[package]]
-name = "nodeenv"
-version = "1.9.1"
-description = "Node.js virtual environment builder"
-optional = false
-python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
-files = [
-    {file = "nodeenv-1.9.1-py2.py3-none-any.whl", hash = "sha256:ba11c9782d29c27c70ffbdda2d7415098754709be8a7056d79a737cd901155c9"},
-    {file = "nodeenv-1.9.1.tar.gz", hash = "sha256:6ec12890a2dab7946721edbfbcd91f3319c6ccc9aec47be7c7e6b7011ee6645f"},
-]
-
-[[package]]
 name = "packaging"
 version = "24.1"
 description = "Core utilities for Python packages"
@@ -494,24 +483,6 @@ spelling = ["pyenchant (>=3.2,<4.0)"]
 testutils = ["gitpython (>3)"]
 
 [[package]]
-name = "pyright"
-version = "1.1.374"
-description = "Command line wrapper for pyright"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "pyright-1.1.374-py3-none-any.whl", hash = "sha256:55752bcf7a3646d293cd76710a983b71e16f6128aab2d42468e6eb7e46c0a70d"},
-    {file = "pyright-1.1.374.tar.gz", hash = "sha256:d01b2daf864ba5e0362e56b844984865970d7204158e61eb685e2dab7804cb82"},
-]
-
-[package.dependencies]
-nodeenv = ">=1.6.0"
-
-[package.extras]
-all = ["twine (>=3.4.1)"]
-dev = ["twine (>=3.4.1)"]
-
-[[package]]
 name = "pytest"
 version = "8.3.2"
 description = "pytest: simple powerful testing with Python"
@@ -649,4 +620,4 @@ typing-extensions = ">=3.7.4"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "85499d03f45cd26302b8b267be44478c701581e8a56a3df0907bb38897fdb2e4"
+content-hash = "53f7e7aaa81354d32924a0a85524bd5db6fd61a40ba5219c262e88c57db9ad14"

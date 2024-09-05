@@ -1,6 +1,8 @@
 # Jobs
 (*fine_tuning.jobs*)
 
+## Overview
+
 ### Available Operations
 
 * [list](#list) - Get Fine Tuning Jobs
@@ -23,7 +25,6 @@ s = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY", ""),
 )
 
-
 res = s.fine_tuning.jobs.list()
 
 if res is not None:
@@ -31,8 +32,6 @@ if res is not None:
     pass
 
 ```
-
-
 
 ### Parameters
 
@@ -49,15 +48,16 @@ if res is not None:
 | `suffix`                                                                                           | *OptionalNullable[str]*                                                                            | :heavy_minus_sign:                                                                                 | The model suffix to filter on. When set, the other results are not displayed.                      |
 | `retries`                                                                                          | [Optional[utils.RetryConfig]](../../models/utils/retryconfig.md)                                   | :heavy_minus_sign:                                                                                 | Configuration to override the default retry behavior of the client.                                |
 
-
 ### Response
 
 **[models.JobsOut](../../models/jobsout.md)**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | models.SDKError | 4xx-5xx         | */*             |
+
 
 ## create
 
@@ -73,7 +73,6 @@ s = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY", ""),
 )
 
-
 res = s.fine_tuning.jobs.create(model="codestral-latest", hyperparameters={})
 
 if res is not None:
@@ -81,8 +80,6 @@ if res is not None:
     pass
 
 ```
-
-
 
 ### Parameters
 
@@ -98,15 +95,16 @@ if res is not None:
 | `auto_start`                                                                                                                                                                                                                                                                                                                                                      | *Optional[bool]*                                                                                                                                                                                                                                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                                                                                                                                                                                                                | This field will be required in a future release.                                                                                                                                                                                                                                                                                                                  |
 | `retries`                                                                                                                                                                                                                                                                                                                                                         | [Optional[utils.RetryConfig]](../../models/utils/retryconfig.md)                                                                                                                                                                                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                                                                                                                                                                                                                | Configuration to override the default retry behavior of the client.                                                                                                                                                                                                                                                                                               |
 
-
 ### Response
 
 **[models.JobsAPIRoutesFineTuningCreateFineTuningJobResponse](../../models/jobsapiroutesfinetuningcreatefinetuningjobresponse.md)**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | models.SDKError | 4xx-5xx         | */*             |
+
 
 ## get
 
@@ -122,7 +120,6 @@ s = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY", ""),
 )
 
-
 res = s.fine_tuning.jobs.get(job_id="b18d8d81-fd7b-4764-a31e-475cb1f36591")
 
 if res is not None:
@@ -131,8 +128,6 @@ if res is not None:
 
 ```
 
-
-
 ### Parameters
 
 | Parameter                                                           | Type                                                                | Required                                                            | Description                                                         |
@@ -140,15 +135,16 @@ if res is not None:
 | `job_id`                                                            | *str*                                                               | :heavy_check_mark:                                                  | The ID of the job to analyse.                                       |
 | `retries`                                                           | [Optional[utils.RetryConfig]](../../models/utils/retryconfig.md)    | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |
 
-
 ### Response
 
 **[models.DetailedJobOut](../../models/detailedjobout.md)**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | models.SDKError | 4xx-5xx         | */*             |
+
 
 ## cancel
 
@@ -164,7 +160,6 @@ s = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY", ""),
 )
 
-
 res = s.fine_tuning.jobs.cancel(job_id="03fa7112-315a-4072-a9f2-43f3f1ec962e")
 
 if res is not None:
@@ -173,8 +168,6 @@ if res is not None:
 
 ```
 
-
-
 ### Parameters
 
 | Parameter                                                           | Type                                                                | Required                                                            | Description                                                         |
@@ -182,15 +175,16 @@ if res is not None:
 | `job_id`                                                            | *str*                                                               | :heavy_check_mark:                                                  | The ID of the job to cancel.                                        |
 | `retries`                                                           | [Optional[utils.RetryConfig]](../../models/utils/retryconfig.md)    | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |
 
-
 ### Response
 
 **[models.DetailedJobOut](../../models/detailedjobout.md)**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | models.SDKError | 4xx-5xx         | */*             |
+
 
 ## start
 
@@ -206,7 +200,6 @@ s = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY", ""),
 )
 
-
 res = s.fine_tuning.jobs.start(job_id="0eb0f807-fb9f-4e46-9c13-4e257df6e1ba")
 
 if res is not None:
@@ -215,8 +208,6 @@ if res is not None:
 
 ```
 
-
-
 ### Parameters
 
 | Parameter                                                           | Type                                                                | Required                                                            | Description                                                         |
@@ -224,10 +215,10 @@ if res is not None:
 | `job_id`                                                            | *str*                                                               | :heavy_check_mark:                                                  | N/A                                                                 |
 | `retries`                                                           | [Optional[utils.RetryConfig]](../../models/utils/retryconfig.md)    | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |
 
-
 ### Response
 
 **[models.DetailedJobOut](../../models/detailedjobout.md)**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |

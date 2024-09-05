@@ -24,7 +24,6 @@ s = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY", ""),
 )
 
-
 res = s.chat.complete(model="mistral-small-latest", messages=[
     {
         "content": "Who is the best French painter? Answer in one short sentence.",
@@ -37,8 +36,6 @@ if res is not None:
     pass
 
 ```
-
-
 
 ### Parameters
 
@@ -59,16 +56,17 @@ if res is not None:
 | `safe_prompt`                                                                                                                                                                                                                                                                                                                      | *Optional[bool]*                                                                                                                                                                                                                                                                                                                   | :heavy_minus_sign:                                                                                                                                                                                                                                                                                                                 | Whether to inject a safety prompt before all conversations.                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                    |
 | `retries`                                                                                                                                                                                                                                                                                                                          | [Optional[utils.RetryConfig]](../../models/utils/retryconfig.md)                                                                                                                                                                                                                                                                   | :heavy_minus_sign:                                                                                                                                                                                                                                                                                                                 | Configuration to override the default retry behavior of the client.                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                    |
 
-
 ### Response
 
 **[models.ChatCompletionResponse](../../models/chatcompletionresponse.md)**
+
 ### Errors
 
 | Error Object               | Status Code                | Content Type               |
 | -------------------------- | -------------------------- | -------------------------- |
 | models.HTTPValidationError | 422                        | application/json           |
 | models.SDKError            | 4xx-5xx                    | */*                        |
+
 
 ## stream
 
@@ -84,7 +82,6 @@ s = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY", ""),
 )
 
-
 res = s.chat.stream(model="mistral-small-latest", messages=[
     {
         "content": "Who is the best French painter? Answer in one short sentence.",
@@ -98,8 +95,6 @@ if res is not None:
         print(event, flush=True)
 
 ```
-
-
 
 ### Parameters
 
@@ -120,10 +115,10 @@ if res is not None:
 | `safe_prompt`                                                                                                                                                                                                                                                 | *Optional[bool]*                                                                                                                                                                                                                                              | :heavy_minus_sign:                                                                                                                                                                                                                                            | Whether to inject a safety prompt before all conversations.                                                                                                                                                                                                   |                                                                                                                                                                                                                                                               |
 | `retries`                                                                                                                                                                                                                                                     | [Optional[utils.RetryConfig]](../../models/utils/retryconfig.md)                                                                                                                                                                                              | :heavy_minus_sign:                                                                                                                                                                                                                                            | Configuration to override the default retry behavior of the client.                                                                                                                                                                                           |                                                                                                                                                                                                                                                               |
 
-
 ### Response
 
 **[Union[Generator[models.CompletionEvent, None, None], AsyncGenerator[models.CompletionEvent, None]]](../../models/.md)**
+
 ### Errors
 
 | Error Object               | Status Code                | Content Type               |

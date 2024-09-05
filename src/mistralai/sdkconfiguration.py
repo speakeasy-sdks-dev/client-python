@@ -30,8 +30,8 @@ class SDKConfiguration:
     language: str = "python"
     openapi_doc_version: str = "0.0.2"
     sdk_version: str = "1.0.2"
-    gen_version: str = "2.402.5"
-    user_agent: str = "speakeasy-sdk/python 1.0.2 2.402.5 0.0.2 mistralai"
+    gen_version: str = "2.409.10"
+    user_agent: str = "speakeasy-sdk/python 1.0.2 2.409.10 0.0.2 mistralai"
     retry_config: OptionalNullable[RetryConfig] = Field(default_factory=lambda: UNSET)
     timeout_ms: Optional[int] = None
 

@@ -29,7 +29,6 @@ typing-inspect = "^0.9.0"
 [tool.poetry.group.dev.dependencies]
 mypy = "==1.10.1"
 pylint = "==3.2.3"
-pyright = "==1.1.374"
 pytest = "^8.2.2"
 pytest-asyncio = "^0.23.7"
 types-python-dateutil = "^2.9.0.20240316"

@@ -23,16 +23,13 @@ s = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY", ""),
 )
 
-
-res = s.embeddings.create(inputs="<value>", model="<value>")
+res = s.embeddings.create(inputs="<value>", model="Wrangler")
 
 if res is not None:
     # handle response
     pass
 
 ```
-
-
 
 ### Parameters
 
@@ -43,10 +40,10 @@ if res is not None:
 | `encoding_format`                                                   | *OptionalNullable[str]*                                             | :heavy_minus_sign:                                                  | The format to return the embeddings in.                             |
 | `retries`                                                           | [Optional[utils.RetryConfig]](../../models/utils/retryconfig.md)    | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |
 
-
 ### Response
 
 **[models.EmbeddingResponse](../../models/embeddingresponse.md)**
+
 ### Errors
 
 | Error Object               | Status Code                | Content Type               |
