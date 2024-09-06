@@ -12,7 +12,6 @@ s = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY", ""),
 )
 
-
 res = s.chat.complete(model="mistral-small-latest", messages=[
     {
         "content": "Who is the best French painter? Answer in one short sentence.",
@@ -64,10 +63,9 @@ s = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY", ""),
 )
 
-
 res = s.files.upload(file={
     "file_name": "your_file_here",
-    "content": open("<file_path>", "rb"),
+    "content": open("example.file", "rb"),
 })
 
 if res is not None:
@@ -90,7 +88,7 @@ async def main():
     )
     res = await s.files.upload_async(file={
         "file_name": "your_file_here",
-        "content": open("<file_path>", "rb"),
+        "content": open("example.file", "rb"),
     })
     if res is not None:
         # handle response
@@ -111,7 +109,6 @@ import os
 s = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY", ""),
 )
-
 
 res = s.agents.complete(messages=[
     {
