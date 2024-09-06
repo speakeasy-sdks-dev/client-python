@@ -56,8 +56,7 @@ if res is not None:
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| models.SDKError | 4xx-5xx         | */*             |
-
+| models.SDKError | 4xx-5xx         | \*/\*           |
 
 ## create
 
@@ -103,8 +102,7 @@ if res is not None:
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| models.SDKError | 4xx-5xx         | */*             |
-
+| models.SDKError | 4xx-5xx         | \*/\*           |
 
 ## get
 
@@ -143,8 +141,7 @@ if res is not None:
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| models.SDKError | 4xx-5xx         | */*             |
-
+| models.SDKError | 4xx-5xx         | \*/\*           |
 
 ## cancel
 
@@ -183,8 +180,7 @@ if res is not None:
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| models.SDKError | 4xx-5xx         | */*             |
-
+| models.SDKError | 4xx-5xx         | \*/\*           |
 
 ## start
 
@@ -223,4 +219,4 @@ if res is not None:
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| models.SDKError | 4xx-5xx         | */*             |
+| models.SDKError | 4xx-5xx         | \*/\*           |
