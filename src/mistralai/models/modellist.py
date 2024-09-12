@@ -10,9 +10,9 @@ from typing_extensions import NotRequired
 class ModelListTypedDict(TypedDict):
     object: NotRequired[str]
     data: NotRequired[List[ModelCardTypedDict]]
-    
+
 
 class ModelList(BaseModel):
     object: Optional[str] = "list"
+
     data: Optional[List[ModelCard]] = None
-    

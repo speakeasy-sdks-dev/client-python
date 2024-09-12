@@ -24,7 +24,6 @@ s = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY", ""),
 )
 
-
 res = s.agents.complete(messages=[
     {
         "content": "Who is the best French painter? Answer in one short sentence.",
@@ -37,8 +36,6 @@ if res is not None:
     pass
 
 ```
-
-
 
 ### Parameters
 
@@ -56,16 +53,17 @@ if res is not None:
 | `tool_choice`                                                                                                                                                                                                                                                                                                                      | [Optional[models.AgentsCompletionRequestToolChoice]](../../models/agentscompletionrequesttoolchoice.md)                                                                                                                                                                                                                            | :heavy_minus_sign:                                                                                                                                                                                                                                                                                                                 | N/A                                                                                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                    |
 | `retries`                                                                                                                                                                                                                                                                                                                          | [Optional[utils.RetryConfig]](../../models/utils/retryconfig.md)                                                                                                                                                                                                                                                                   | :heavy_minus_sign:                                                                                                                                                                                                                                                                                                                 | Configuration to override the default retry behavior of the client.                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                    |
 
-
 ### Response
 
 **[models.ChatCompletionResponse](../../models/chatcompletionresponse.md)**
+
 ### Errors
 
 | Error Object               | Status Code                | Content Type               |
 | -------------------------- | -------------------------- | -------------------------- |
 | models.HTTPValidationError | 422                        | application/json           |
 | models.SDKError            | 4xx-5xx                    | */*                        |
+
 
 ## stream
 
@@ -81,7 +79,6 @@ s = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY", ""),
 )
 
-
 res = s.agents.stream(messages=[
     {
         "content": "Who is the best French painter? Answer in one short sentence.",
@@ -95,8 +92,6 @@ if res is not None:
         print(event, flush=True)
 
 ```
-
-
 
 ### Parameters
 
@@ -114,10 +109,10 @@ if res is not None:
 | `tool_choice`                                                                                                                                          | [Optional[models.AgentsCompletionStreamRequestToolChoice]](../../models/agentscompletionstreamrequesttoolchoice.md)                                    | :heavy_minus_sign:                                                                                                                                     | N/A                                                                                                                                                    |                                                                                                                                                        |
 | `retries`                                                                                                                                              | [Optional[utils.RetryConfig]](../../models/utils/retryconfig.md)                                                                                       | :heavy_minus_sign:                                                                                                                                     | Configuration to override the default retry behavior of the client.                                                                                    |                                                                                                                                                        |
 
-
 ### Response
 
 **[Union[Generator[models.CompletionEvent, None, None], AsyncGenerator[models.CompletionEvent, None]]](../../models/.md)**
+
 ### Errors
 
 | Error Object               | Status Code                | Content Type               |

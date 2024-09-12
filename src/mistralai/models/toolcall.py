@@ -11,14 +11,18 @@ from typing_extensions import Annotated, NotRequired
 
 ToolTypes = Union[Literal["function"], UnrecognizedStr]
 
+
 class ToolCallTypedDict(TypedDict):
     function: FunctionCallTypedDict
     id: NotRequired[str]
     type: NotRequired[ToolTypes]
-    
+
 
 class ToolCall(BaseModel):
     function: FunctionCall
+
     id: Optional[str] = "null"
-    type: Annotated[Optional[ToolTypes], PlainValidator(validate_open_enum(False))] = "function"
-    
+
+    type: Annotated[Optional[ToolTypes], PlainValidator(validate_open_enum(False))] = (
+        "function"
+    )

@@ -24,7 +24,6 @@ s = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY", ""),
 )
 
-
 res = s.fim.complete(model="codestral-2405", prompt="def", suffix="return a+b")
 
 if res is not None:
@@ -32,8 +31,6 @@ if res is not None:
     pass
 
 ```
-
-
 
 ### Parameters
 
@@ -51,16 +48,17 @@ if res is not None:
 | `suffix`                                                                                                                                                                                                                                                                                                                           | *OptionalNullable[str]*                                                                                                                                                                                                                                                                                                            | :heavy_minus_sign:                                                                                                                                                                                                                                                                                                                 | Optional text/code that adds more context for the model. When given a `prompt` and a `suffix` the model will fill what is between them. When `suffix` is not provided, the model will simply execute completion starting with `prompt`.                                                                                            | return a+b                                                                                                                                                                                                                                                                                                                         |
 | `retries`                                                                                                                                                                                                                                                                                                                          | [Optional[utils.RetryConfig]](../../models/utils/retryconfig.md)                                                                                                                                                                                                                                                                   | :heavy_minus_sign:                                                                                                                                                                                                                                                                                                                 | Configuration to override the default retry behavior of the client.                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                    |
 
-
 ### Response
 
 **[models.FIMCompletionResponse](../../models/fimcompletionresponse.md)**
+
 ### Errors
 
 | Error Object               | Status Code                | Content Type               |
 | -------------------------- | -------------------------- | -------------------------- |
 | models.HTTPValidationError | 422                        | application/json           |
 | models.SDKError            | 4xx-5xx                    | */*                        |
+
 
 ## stream
 
@@ -76,7 +74,6 @@ s = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY", ""),
 )
 
-
 res = s.fim.stream(model="codestral-2405", prompt="def", suffix="return a+b")
 
 if res is not None:
@@ -85,8 +82,6 @@ if res is not None:
         print(event, flush=True)
 
 ```
-
-
 
 ### Parameters
 
@@ -104,10 +99,10 @@ if res is not None:
 | `suffix`                                                                                                                                                                                                                                                      | *OptionalNullable[str]*                                                                                                                                                                                                                                       | :heavy_minus_sign:                                                                                                                                                                                                                                            | Optional text/code that adds more context for the model. When given a `prompt` and a `suffix` the model will fill what is between them. When `suffix` is not provided, the model will simply execute completion starting with `prompt`.                       | return a+b                                                                                                                                                                                                                                                    |
 | `retries`                                                                                                                                                                                                                                                     | [Optional[utils.RetryConfig]](../../models/utils/retryconfig.md)                                                                                                                                                                                              | :heavy_minus_sign:                                                                                                                                                                                                                                            | Configuration to override the default retry behavior of the client.                                                                                                                                                                                           |                                                                                                                                                                                                                                                               |
 
-
 ### Response
 
 **[Union[Generator[models.CompletionEvent, None, None], AsyncGenerator[models.CompletionEvent, None]]](../../models/.md)**
+
 ### Errors
 
 | Error Object               | Status Code                | Content Type               |

@@ -10,9 +10,10 @@ from typing_extensions import Annotated
 class RetrieveModelV1ModelsModelIDGetRequestTypedDict(TypedDict):
     model_id: str
     r"""The ID of the model to retrieve."""
-    
+
 
 class RetrieveModelV1ModelsModelIDGetRequest(BaseModel):
-    model_id: Annotated[str, FieldMetadata(path=PathParamMetadata(style="simple", explode=False))]
+    model_id: Annotated[
+        str, FieldMetadata(path=PathParamMetadata(style="simple", explode=False))
+    ]
     r"""The ID of the model to retrieve."""
-    

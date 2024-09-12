@@ -15,12 +15,13 @@ UserMessageContent = Union[str, List[TextChunk]]
 
 UserMessageRole = Literal["user"]
 
+
 class UserMessageTypedDict(TypedDict):
     content: UserMessageContentTypedDict
     role: NotRequired[UserMessageRole]
-    
+
 
 class UserMessage(BaseModel):
     content: UserMessageContent
+
     role: Optional[UserMessageRole] = "user"
-    

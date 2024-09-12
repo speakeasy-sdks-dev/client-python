@@ -15,12 +15,13 @@ Content = Union[str, List[ContentChunk]]
 
 Role = Literal["system"]
 
+
 class SystemMessageTypedDict(TypedDict):
     content: ContentTypedDict
     role: NotRequired[Role]
-    
+
 
 class SystemMessage(BaseModel):
     content: Content
+
     role: Optional[Role] = "system"
-    

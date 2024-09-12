@@ -9,9 +9,11 @@ from typing_extensions import Annotated
 
 class TextChunkTypedDict(TypedDict):
     text: str
-    
+
 
 class TextChunk(BaseModel):
     text: str
+
+    # fmt: off
     TYPE: Annotated[Final[Optional[str]], pydantic.Field(alias="type")] = "text" # type: ignore
-    
+    # fmt: on
