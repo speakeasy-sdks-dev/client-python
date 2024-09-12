@@ -31,7 +31,7 @@ s = Mistral(
 )
 
 res = s.files.upload(file={
-    "file_name": "your_file_here",
+    "file_name": "example.file",
     "content": open("example.file", "rb"),
 })
 

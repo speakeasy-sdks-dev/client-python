@@ -132,7 +132,7 @@ s = Mistral(
 )
 
 res = s.files.upload(file={
-    "file_name": "your_file_here",
+    "file_name": "example.file",
     "content": open("example.file", "rb"),
 })
 
@@ -155,7 +155,7 @@ async def main():
         api_key=os.getenv("MISTRAL_API_KEY", ""),
     )
     res = await s.files.upload_async(file={
-        "file_name": "your_file_here",
+        "file_name": "example.file",
         "content": open("example.file", "rb"),
     })
     if res is not None:
@@ -422,7 +422,7 @@ s = Mistral(
 )
 
 res = s.files.upload(file={
-    "file_name": "your_file_here",
+    "file_name": "example.file",
     "content": open("example.file", "rb"),
 })
 

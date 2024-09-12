@@ -14,8 +14,9 @@ features:
   python:
     additionalDependencies: 1.0.0
     constsAndDefaults: 1.0.2
-    core: 5.5.1
+    core: 5.5.2
     defaultEnabledRetries: 0.2.0
+    enumUnions: 0.1.0
     envVarSecurityUsage: 0.3.1
     examples: 3.0.0
     flatRequests: 1.0.1
@@ -383,7 +384,7 @@ examples:
         application/json: {"model": "codestral-latest"}
       responses:
         "200":
-          application/json: {"id": "ad642c1f-c6fe-4072-81bc-dd89dc7fa504", "auto_start": false, "model": "open-mistral-7b", "status": "FAILED_VALIDATION", "job_type": "<value>", "created_at": 230313, "modified_at": 207565, "training_files": []}
+          application/json: {"id": "7ad642c1-fc6f-4e07-a41b-cdd89dc7fa50", "auto_start": true, "model": "open-mistral-nemo", "status": "QUEUED", "job_type": "<value>", "created_at": 519028, "modified_at": 230313, "training_files": []}
   jobs_api_routes_fine_tuning_get_fine_tuning_job:
     speakeasy-default-jobs-api-routes-fine-tuning-get-fine-tuning-job:
       parameters:
