@@ -14,6 +14,7 @@ JobsOutObject = Literal["list"]
 class JobsOutTypedDict(TypedDict):
     total: int
     data: NotRequired[List[JobOutTypedDict]]
+    object: NotRequired[JobsOutObject]
 
 
 class JobsOut(BaseModel):

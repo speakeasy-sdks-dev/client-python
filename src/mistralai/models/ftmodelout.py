@@ -23,6 +23,7 @@ class FTModelOutTypedDict(TypedDict):
     archived: bool
     capabilities: FTModelCapabilitiesOutTypedDict
     job: str
+    object: NotRequired[FTModelOutObject]
     name: NotRequired[Nullable[str]]
     description: NotRequired[Nullable[str]]
     max_context_length: NotRequired[int]

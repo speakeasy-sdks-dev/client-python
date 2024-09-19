@@ -36,6 +36,8 @@ class FileSchemaTypedDict(TypedDict):
     r"""The name of the uploaded file."""
     sample_type: SampleType
     source: Source
+    purpose: FileSchemaPurpose
+    r"""The intended purpose of the uploaded file. Only accepts fine-tuning (`fine-tune`) for now."""
     num_lines: NotRequired[Nullable[int]]
 
 

@@ -5,7 +5,7 @@ from .imageurl import ImageURL, ImageURLTypedDict
 from mistralai.types import BaseModel
 import pydantic
 from typing import Final, Literal, Optional, TypedDict, Union
-from typing_extensions import Annotated
+from typing_extensions import Annotated, NotRequired
 
 
 ImageURLChunkType = Literal["image_url"]
@@ -20,6 +20,7 @@ class ImageURLChunkTypedDict(TypedDict):
     r"""{\"type\":\"image_url\",\"image_url\":{\"url\":\"data:image/png;base64,iVBORw0"""
 
     image_url: ImageURLChunkImageURLTypedDict
+    type: NotRequired[ImageURLChunkType]
 
 
 class ImageURLChunk(BaseModel):
