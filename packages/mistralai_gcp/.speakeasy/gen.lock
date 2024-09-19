@@ -22,7 +22,7 @@ features:
     globalSecurityCallbacks: 1.0.0
     globalSecurityFlattening: 1.0.0
     globalServerURLs: 3.0.0
-    methodArguments: 1.0.1
+    methodArguments: 1.0.2
     nameOverrides: 3.0.0
     nullables: 1.0.0
     openEnums: 1.0.0
