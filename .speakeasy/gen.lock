@@ -3,8 +3,8 @@ id: 2d045ec7-2ebb-4f4d-ad25-40953b132161
 management:
   docChecksum: e75ca54601920b2770d9a559b299d272
   docVersion: 0.0.2
-  speakeasyVersion: 1.398.0
-  generationVersion: 2.415.8
+  speakeasyVersion: internal
+  generationVersion: 2.420.1
   releaseVersion: 1.1.0
   configChecksum: 49094e0f156d020bd164f8b4bd41e97b
   repoURL: https://github.com/mistralai/client-python.git
@@ -13,8 +13,8 @@ management:
 features:
   python:
     additionalDependencies: 1.0.0
-    constsAndDefaults: 1.0.2
-    core: 5.5.3
+    constsAndDefaults: 1.0.3
+    core: 5.5.4
     defaultEnabledRetries: 0.2.0
     enumUnions: 0.1.0
     envVarSecurityUsage: 0.3.1
@@ -25,6 +25,7 @@ features:
     globalSecurityCallbacks: 1.0.0
     globalSecurityFlattening: 1.0.0
     globalServerURLs: 3.0.0
+    methodArguments: 1.0.1
     multipartFileContentType: 1.0.0
     nameOverrides: 3.0.0
     nullables: 1.0.0
@@ -194,7 +195,6 @@ generatedFiles:
   - poetry.toml
   - py.typed
   - pylintrc
-  - pyproject.toml
   - scripts/compile.sh
   - scripts/prepare-readme.py
   - scripts/publish.sh
@@ -431,7 +431,7 @@ examples:
   chat_completion_v1_chat_completions_post:
     speakeasy-default-chat-completion-v1-chat-completions-post:
       requestBody:
-        application/json: {"model": "mistral-small-latest", "messages": [{"content": "<value>"}]}
+        application/json: {"model": "mistral-small-latest", "messages": [{"content": "Who is the best French painter? Answer in one short sentence.", "role": "user"}]}
       responses:
         "200":
           application/json: {"id": "cmpl-e5cc70bb28c444948073e77776eb30ef", "object": "chat.completion", "model": "mistral-small-latest", "usage": {"prompt_tokens": 16, "completion_tokens": 34, "total_tokens": 50}, "created": 1702256327, "choices": []}
@@ -439,7 +439,7 @@ examples:
   stream_chat:
     speakeasy-default-stream-chat:
       requestBody:
-        application/json: {"model": "mistral-small-latest", "messages": [{"content": []}]}
+        application/json: {"model": "mistral-small-latest", "messages": [{"content": "Who is the best French painter? Answer in one short sentence.", "role": "user"}]}
   fim_completion_v1_fim_completions_post:
     speakeasy-default-fim-completion-v1-fim-completions-post:
       requestBody:
@@ -455,7 +455,7 @@ examples:
   agents_completion_v1_agents_completions_post:
     speakeasy-default-agents-completion-v1-agents-completions-post:
       requestBody:
-        application/json: {"messages": [{"content": "<value>"}], "agent_id": "<value>"}
+        application/json: {"messages": [{"content": "Who is the best French painter? Answer in one short sentence.", "role": "user"}], "agent_id": "<value>"}
       responses:
         "200":
           application/json: {"id": "cmpl-e5cc70bb28c444948073e77776eb30ef", "object": "chat.completion", "model": "mistral-small-latest", "usage": {"prompt_tokens": 16, "completion_tokens": 34, "total_tokens": 50}, "created": 1702256327, "choices": []}
@@ -463,7 +463,7 @@ examples:
   stream_agents:
     speakeasy-default-stream-agents:
       requestBody:
-        application/json: {"messages": [{"content": []}], "agent_id": "<value>"}
+        application/json: {"messages": [{"content": "Who is the best French painter? Answer in one short sentence.", "role": "user"}], "agent_id": "<value>"}
   embeddings_v1_embeddings_post:
     speakeasy-default-embeddings-v1-embeddings-post:
       requestBody:

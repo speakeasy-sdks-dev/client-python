@@ -15,6 +15,7 @@ class GithubRepositoryInTypedDict(TypedDict):
     name: str
     owner: str
     token: str
+    type: NotRequired[GithubRepositoryInType]
     ref: NotRequired[Nullable[str]]
     weight: NotRequired[float]
 

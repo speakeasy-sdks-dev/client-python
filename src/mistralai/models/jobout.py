@@ -61,6 +61,8 @@ class JobOutTypedDict(TypedDict):
     r"""A list containing the IDs of uploaded files that contain training data."""
     validation_files: NotRequired[Nullable[List[str]]]
     r"""A list containing the IDs of uploaded files that contain validation data."""
+    object: NotRequired[Object]
+    r"""The object type of the fine-tuning job."""
     fine_tuned_model: NotRequired[Nullable[str]]
     r"""The name of the fine-tuned model that is being created. The value will be `null` if the fine-tuning job is still running."""
     suffix: NotRequired[Nullable[str]]
