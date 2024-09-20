@@ -6,7 +6,7 @@ from datetime import datetime
 from mistralai.types import BaseModel, Nullable, OptionalNullable, UNSET, UNSET_SENTINEL
 import pydantic
 from pydantic import model_serializer
-from typing import Final, List, Optional, TypedDict
+from typing import Final, List, Literal, Optional, TypedDict
 from typing_extensions import Annotated, NotRequired
 
 
@@ -25,6 +25,7 @@ class FTModelCardTypedDict(TypedDict):
     max_context_length: NotRequired[int]
     aliases: NotRequired[List[str]]
     deprecation: NotRequired[Nullable[datetime]]
+    type: Literal["fine-tuned"]
     archived: NotRequired[bool]
 
 

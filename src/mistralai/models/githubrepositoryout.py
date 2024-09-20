@@ -15,6 +15,7 @@ class GithubRepositoryOutTypedDict(TypedDict):
     name: str
     owner: str
     commit_id: str
+    type: NotRequired[GithubRepositoryOutType]
     ref: NotRequired[Nullable[str]]
     weight: NotRequired[float]
 

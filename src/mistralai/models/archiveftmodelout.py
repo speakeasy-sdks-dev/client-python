@@ -12,6 +12,7 @@ ArchiveFTModelOutObject = Literal["model"]
 
 class ArchiveFTModelOutTypedDict(TypedDict):
     id: str
+    object: NotRequired[ArchiveFTModelOutObject]
     archived: NotRequired[bool]
 
 
