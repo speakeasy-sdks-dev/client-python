@@ -26,7 +26,8 @@ s = Mistral(
 
 res = s.agents.complete(messages=[
     {
-        "content": "<value>",
+        "content": "Who is the best French painter? Answer in one short sentence.",
+        "role": "user",
     },
 ], agent_id="<value>")
 
@@ -80,13 +81,8 @@ s = Mistral(
 
 res = s.agents.stream(messages=[
     {
-        "content": [
-            {
-                "image_url": {
-                    "url": "http://possible-veal.org",
-                },
-            },
-        ],
+        "content": "Who is the best French painter? Answer in one short sentence.",
+        "role": "user",
     },
 ], agent_id="<value>")
 
