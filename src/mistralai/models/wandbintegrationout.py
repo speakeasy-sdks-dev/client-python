@@ -14,6 +14,7 @@ Type = Literal["wandb"]
 class WandbIntegrationOutTypedDict(TypedDict):
     project: str
     r"""The name of the project that the new run will be created under."""
+    type: NotRequired[Type]
     name: NotRequired[Nullable[str]]
     r"""A display name to set for the run. If not set, will use the job ID as the name."""
     run_name: NotRequired[Nullable[str]]
