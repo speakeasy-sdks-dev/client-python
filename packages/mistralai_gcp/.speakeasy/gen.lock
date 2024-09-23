@@ -3,16 +3,16 @@ id: ec60f2d8-7869-45c1-918e-773d41a8cf74
 management:
   docChecksum: 823d9b94fcb9c6588d0af16b7301f4ac
   docVersion: 0.0.2
-  speakeasyVersion: 1.396.7
-  generationVersion: 2.415.6
+  speakeasyVersion: internal
+  generationVersion: 2.422.10
   releaseVersion: 1.2.2
   configChecksum: fa993b7253c0c8c0d114d51422ffb486
   published: true
 features:
   python:
     additionalDependencies: 1.0.0
-    constsAndDefaults: 1.0.2
-    core: 5.5.3
+    constsAndDefaults: 1.0.3
+    core: 5.5.4
     defaultEnabledRetries: 0.2.0
     enumUnions: 0.1.0
     envVarSecurityUsage: 0.3.1
@@ -22,6 +22,7 @@ features:
     globalSecurityCallbacks: 1.0.0
     globalSecurityFlattening: 1.0.0
     globalServerURLs: 3.0.0
+    methodArguments: 1.0.2
     nameOverrides: 3.0.0
     nullables: 1.0.0
     openEnums: 1.0.0
@@ -157,11 +158,11 @@ examples:
   stream_chat:
     speakeasy-default-stream-chat:
       requestBody:
-        application/json: {"model": "mistral-small-latest", "messages": [{"content": []}]}
+        application/json: {"model": "mistral-small-latest", "messages": [{"content": "Who is the best French painter? Answer in one short sentence.", "role": "user"}]}
   chat_completion_v1_chat_completions_post:
     speakeasy-default-chat-completion-v1-chat-completions-post:
       requestBody:
-        application/json: {"model": "mistral-small-latest", "messages": [{"content": "<value>"}]}
+        application/json: {"model": "mistral-small-latest", "messages": [{"content": "Who is the best French painter? Answer in one short sentence.", "role": "user"}]}
       responses:
         "200":
           application/json: {"id": "cmpl-e5cc70bb28c444948073e77776eb30ef", "object": "chat.completion", "model": "mistral-small-latest", "usage": {"prompt_tokens": 16, "completion_tokens": 34, "total_tokens": 50}, "created": 1702256327, "choices": []}
