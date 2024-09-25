@@ -16,6 +16,7 @@ class WandbIntegrationTypedDict(TypedDict):
     r"""The name of the project that the new run will be created under."""
     api_key: str
     r"""The WandB API key to use for authentication."""
+    type: NotRequired[WandbIntegrationType]
     name: NotRequired[Nullable[str]]
     r"""A display name to set for the run. If not set, will use the job ID as the name."""
     run_name: NotRequired[Nullable[str]]

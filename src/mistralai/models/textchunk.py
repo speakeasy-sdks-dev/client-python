@@ -4,7 +4,7 @@ from __future__ import annotations
 from mistralai.types import BaseModel
 import pydantic
 from typing import Final, Literal, Optional, TypedDict
-from typing_extensions import Annotated
+from typing_extensions import Annotated, NotRequired
 
 
 TextChunkType = Literal["text"]
@@ -12,6 +12,7 @@ TextChunkType = Literal["text"]
 
 class TextChunkTypedDict(TypedDict):
     text: str
+    type: NotRequired[TextChunkType]
 
 
 class TextChunk(BaseModel):

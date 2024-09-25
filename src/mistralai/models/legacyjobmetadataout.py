@@ -31,6 +31,7 @@ class LegacyJobMetadataOutTypedDict(TypedDict):
     r"""The number of complete passes through the entire training dataset."""
     training_steps: NotRequired[Nullable[int]]
     r"""The number of training steps to perform. A training step refers to a single update of the model weights during the fine-tuning process. This update is typically calculated using a batch of samples from the training dataset."""
+    object: NotRequired[LegacyJobMetadataOutObject]
 
 
 class LegacyJobMetadataOut(BaseModel):

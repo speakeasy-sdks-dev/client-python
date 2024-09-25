@@ -49,6 +49,7 @@ class FilesAPIRoutesUploadFileMultiPartBodyParamsTypedDict(TypedDict):
     file=@path/to/your/file.jsonl
     ```
     """
+    purpose: NotRequired[FilesAPIRoutesUploadFilePurpose]
 
 
 class FilesAPIRoutesUploadFileMultiPartBodyParams(BaseModel):

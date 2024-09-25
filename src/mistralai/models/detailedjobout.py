@@ -54,6 +54,7 @@ class DetailedJobOutTypedDict(TypedDict):
     modified_at: int
     training_files: List[str]
     validation_files: NotRequired[Nullable[List[str]]]
+    object: NotRequired[DetailedJobOutObject]
     fine_tuned_model: NotRequired[Nullable[str]]
     suffix: NotRequired[Nullable[str]]
     integrations: NotRequired[Nullable[List[DetailedJobOutIntegrationsTypedDict]]]
