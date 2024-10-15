@@ -9,8 +9,8 @@ from mistralai_gcp.types import (
     UNSET_SENTINEL,
 )
 from pydantic import model_serializer
-from typing import List, Optional, TypedDict, Union
-from typing_extensions import NotRequired
+from typing import List, Optional, Union
+from typing_extensions import NotRequired, TypedDict
 
 
 FIMCompletionRequestStopTypedDict = Union[str, List[str]]

@@ -3,8 +3,8 @@
 from __future__ import annotations
 from .textchunk import TextChunk, TextChunkTypedDict
 from mistralai_gcp.types import BaseModel
-from typing import List, Literal, Optional, TypedDict, Union
-from typing_extensions import NotRequired
+from typing import List, Literal, Optional, Union
+from typing_extensions import NotRequired, TypedDict
 
 
 ContentTypedDict = Union[str, List[TextChunkTypedDict]]

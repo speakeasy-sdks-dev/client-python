@@ -3,7 +3,8 @@
 from __future__ import annotations
 from .assistantmessage import AssistantMessage, AssistantMessageTypedDict
 from mistralai_gcp.types import BaseModel
-from typing import Literal, TypedDict
+from typing import Literal
+from typing_extensions import TypedDict
 
 
 ChatCompletionChoiceFinishReason = Literal[

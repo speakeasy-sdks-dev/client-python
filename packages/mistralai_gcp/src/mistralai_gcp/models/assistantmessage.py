@@ -10,8 +10,8 @@ from mistralai_gcp.types import (
     UNSET_SENTINEL,
 )
 from pydantic import model_serializer
-from typing import List, Literal, Optional, TypedDict
-from typing_extensions import NotRequired
+from typing import List, Literal, Optional
+from typing_extensions import NotRequired, TypedDict
 
 
 AssistantMessageRole = Literal["assistant"]

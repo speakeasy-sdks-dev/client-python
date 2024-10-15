@@ -4,7 +4,8 @@ from __future__ import annotations
 from .deltamessage import DeltaMessage, DeltaMessageTypedDict
 from mistralai_gcp.types import BaseModel, Nullable, UNSET_SENTINEL
 from pydantic import model_serializer
-from typing import Literal, TypedDict
+from typing import Literal
+from typing_extensions import TypedDict
 
 
 FinishReason = Literal["stop", "length", "error", "tool_calls"]

@@ -25,8 +25,11 @@ python:
   clientServerStatusCodesAsErrors: true
   description: Python Client SDK for the Mistral AI API in GCP.
   enumFormat: union
+  fixFlags:
+    responseRequiredSep2024: false
   flattenGlobalSecurity: true
   flattenRequests: true
+  flatteningOrder: parameters-first
   imports:
     option: openapi
     paths:

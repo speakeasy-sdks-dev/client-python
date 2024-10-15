@@ -18,8 +18,8 @@ from mistralai_azure.types import (
 )
 from mistralai_azure.utils import get_discriminator
 from pydantic import Discriminator, Tag, model_serializer
-from typing import List, Optional, TypedDict, Union
-from typing_extensions import Annotated, NotRequired
+from typing import List, Optional, Union
+from typing_extensions import Annotated, NotRequired, TypedDict
 
 
 StopTypedDict = Union[str, List[str]]

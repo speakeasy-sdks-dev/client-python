@@ -3,8 +3,8 @@
 from __future__ import annotations
 from .contentchunk import ContentChunk, ContentChunkTypedDict
 from mistralai_azure.types import BaseModel
-from typing import List, Literal, Optional, TypedDict, Union
-from typing_extensions import NotRequired
+from typing import List, Literal, Optional, Union
+from typing_extensions import NotRequired, TypedDict
 
 
 UserMessageContentTypedDict = Union[str, List[ContentChunkTypedDict]]
